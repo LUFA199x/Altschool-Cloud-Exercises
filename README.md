@@ -1,1 +1,1 @@
-# My Exercises Repo
+# Repo for my Exercises
