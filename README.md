@@ -1,4 +1,4 @@
-#MY AltSchoolAfrica CloudEngineering Journey.
+# MY AltSchoolAfrica CloudEngineering Journey.
 
 My intent is to use this repository to document my journey towards a better understanding of "cloud engineering" with AltSchoolAfrica. I started this journey on Fri, 1 Apr, 2022. These exercises is so that others can take something from them.
 
