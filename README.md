@@ -14,5 +14,5 @@ The reason for documenting these Exercises is so that others can take something 
 8. Executing a Cronjob.
 9. Executing an Ansible script to render the content of PHP file.
 10. Calculation of Network IP, Number of hosts, Range of IP addresses and Broadcast IP from a given Subnet 193.16.20.35/29
-11. Deploying a Laravel Project using a LAMP stack and necessary dependencies.
-12. Deploying a Laravel Project using an Ansible script to install packages and dependencies, configuration your apache webserver etc, also including a Bash script  for the Installation and setup of postgresql.
+11. Laravel mini_Project: Deploying a Laravel Project using a LAMP stack and necessary dependencies.
+12. Laravel Exam: Deploying a Laravel Project using an Ansible script to install packages and dependencies, configuration your apache webserver etc, also including a Bash script  for the Installation and setup of postgresql.
