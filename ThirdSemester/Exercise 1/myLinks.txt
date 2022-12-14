@@ -1,0 +1,5 @@
+#S3 bucket link 
+https://solaoluwalufa-12-13-22-12-09am.s3.eu-west-2.amazonaws.com/index.html
+
+#link to my cloudfront Instance
+https://d1aj0mk9efjbmi.cloudfront.net/index.html
