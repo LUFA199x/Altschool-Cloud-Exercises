@@ -1,0 +1,44 @@
+---
+
+- hosts: webservers
+  become: yes
+  tasks:
+  
+  - name: upadte & upgrade server
+    apt:
+      update_cache: yes
+      upgrade: yes
+
+  - name: install nginx
+    apt:
+      name: nginx
+      state: latest
+
+  - name: install php
+    apt:
+      name: php8.1-fpm
+      state: latest
+
+  - name: removing the nginx file
+    file: 
+      path: /var/www/html/index.nginx-debian.html
+      state: absent
+
+  - name: remove default nginx document
+    file:
+      path: /etc/nginx/sites-available/default
+      state: absent
+
+  - name: copying php document to print my instances
+    copy:
+      src: index.php
+      dest: /var/www/html
+      owner: root
+      group: root
+      mode: 0744
+
+  - name: restarting ngnix
+    service: 
+      name: nginx
+      state: restarted
+      enabled: yes
