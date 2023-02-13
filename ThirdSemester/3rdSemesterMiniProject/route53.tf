@@ -1,5 +1,5 @@
 variable "domain_name" {
-  default    = "nwokolo.live"
+  default    = "solaoluwalufa.me"
   type        = string
   description = "Domain name"
 }

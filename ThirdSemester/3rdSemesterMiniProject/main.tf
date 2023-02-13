@@ -2,7 +2,7 @@ terraform {
     required_providers {
         aws = {
         source  = "hashicorp/aws"
-        version = "~> 3.0"
+        version = "~> 4.0"
         }
     }
 }
@@ -178,7 +178,10 @@ resource "aws_instance" "Altschool1" {
     Name   = "Altschool-1"
     source = "terraform"
   }
+
 }
+
+
 # creating instance 2
  resource "aws_instance" "Altschool2" {
   ami             = "ami-01b8d743224353ffe"
@@ -191,7 +194,9 @@ resource "aws_instance" "Altschool1" {
     Name   = "Altschool-2"
     source = "terraform"
   }
+
 }
+
 # creating instance 3
 resource "aws_instance" "Altschool3" {
   ami             = "ami-01b8d743224353ffe"
@@ -204,11 +209,13 @@ resource "aws_instance" "Altschool3" {
     Name   = "Altschool-3"
     source = "terraform"
   }
+
 }
+
 
 # Create a file to store the IP addresses of the instances
 resource "local_file" "Ip_address" {
-  filename = "/User/SolaAlufa/Desktop/TerraformProJects/host-inventory"
+  filename = "User/SolaAlufa/Desktop/TerraformProJects/host-inventory"
   content  = <<EOT
 ${aws_instance.Altschool1.public_ip}
 ${aws_instance.Altschool2.public_ip}
