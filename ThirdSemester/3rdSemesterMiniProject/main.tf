@@ -179,6 +179,10 @@ resource "aws_instance" "Altschool1" {
     source = "terraform"
   }
 
+    provisioner "file" {
+       command = "echo ${self.public_ip}
+  }
+
 }
 
 
@@ -194,6 +198,11 @@ resource "aws_instance" "Altschool1" {
     Name   = "Altschool-2"
     source = "terraform"
   }
+     provisioner "file" {
+
+       command = "echo ${self.public_ip}
+
+  }
 
 }
 
@@ -208,6 +217,10 @@ resource "aws_instance" "Altschool3" {
   tags = {
     Name   = "Altschool-3"
     source = "terraform"
+  }
+    
+  provisioner "file" {
+       command = "echo ${self.public_ip}
   }
 
 }
